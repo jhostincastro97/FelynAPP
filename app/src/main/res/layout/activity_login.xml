@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,69 +10,145 @@
 
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/inicio_sesion"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="270dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="170dp"
+        android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
         android:text="Inicio De Sesion"
         android:textColor="@color/colorWhite"
-        android:background="@drawable/fondo"/>
+        android:background="@drawable/fondo"
+        android:layout_marginRight="170dp"
+        android:gravity="start|center" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="350dp"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/fondo">
-        
+        android:background="@drawable/fondo"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:layout_marginLeft="10dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
             android:text="Iniciar Sesión"
-            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
             android:textSize="20dp"
-            android:textColor="@color/colorWhite"/>
+            android:textStyle="bold" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Usuario"
             android:layout_marginLeft="30dp"
-            android:textColor="@color/colorWhite"
+            android:drawableLeft="@drawable/usuario_36x36"
+            android:drawablePadding="5dp"
+            android:hint="Usuario"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#fff"
             android:textStyle="italic" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contraseña"
             android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/password_36x36"
+            android:drawablePadding="5dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
             android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
             android:textStyle="italic" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="textEnd"
-            android:textSize="10dp"
-            android:textColor="@color/colorWhite"
+            android:layout_marginRight="5dp"
+            android:autoLink="web"
+            android:gravity="end"
             android:text="¿Olvidaste tu contraseña?"
-            android:gravity="end" />
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="13dp" />
+
 
         <Button
             android:id="@+id/btn_Ingresar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="60dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/fondobtn"
+            android:drawableRight="@drawable/ic_chevron_right_black_36dp"
+            android:gravity="center|center_vertical"
             android:text="Ingresar"
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/fondobtn"/>
+            android:textColor="@color/colorWhite" />
     </LinearLayout>
 
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/fondobtn"
+            android:text="Crear Usuario"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="O ingresa con:"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/facebook"
+            android:text="Facebook"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/google"
+            android:text="Google"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="FELY APP, Derechos Reservados 2020"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
