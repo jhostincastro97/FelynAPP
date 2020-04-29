@@ -14,6 +14,7 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/btn_AMenu"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:background="@drawable/botones_menu"
@@ -23,7 +24,7 @@
             android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
             />
-        // propiedades del boton menu
+        // propiedades del titulo informacion general
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -71,6 +72,7 @@
             android:drawableTint="#FFF" />
 
         <Button
+            android:id="@+id/bntIngresarIG"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
@@ -82,6 +84,7 @@
             android:textColor="#fff" />
 
         <Button
+            android:id="@+id/btnEditarIG"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="@drawable/botones_menu"
@@ -102,15 +105,6 @@
             android:textColor="#fff"
             android:gravity="center" />
 
-        <TextView
-            android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
-            android:hint="Nombre Completo"
-            android:textStyle="italic"
-            android:padding="10dp"
-            android:textColorHint="#fff"
-            />
 
             <EditText
                 android:layout_width="370dp"
@@ -118,194 +112,106 @@
                 android:background="@drawable/fondo_inputs"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
+                android:hint="Nombre Completo"
+                android:textColorHint="#fff"
                 android:padding="10dp"
                 />
 
-        <TextView
+        <EditText
             android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fondo_inputs"
             android:hint="Edad"
-            android:textStyle="italic"
-            android:padding="10dp"
             android:textColorHint="#fff"
-            />
-
-        <EditText
-            android:layout_width="370dp"
-            android:layout_height="50dp"
-            android:background="@drawable/fondo_inputs"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             />
 
-        <TextView
+
+        <EditText
             android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fondo_inputs"
             android:hint="Enfermedad"
-            android:textStyle="italic"
-            android:padding="10dp"
             android:textColorHint="#fff"
-            />
-
-        <EditText
-            android:layout_width="370dp"
-            android:layout_height="50dp"
-            android:background="@drawable/fondo_inputs"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             />
 
-        <TextView
+        <EditText
             android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
             android:hint="Grado o porcentaje de enfermedad"
-            android:textStyle="italic"
-            android:padding="10dp"
             android:textColorHint="#fff"
-            />
-
-        <EditText
-            android:layout_width="370dp"
-            android:layout_height="50dp"
             android:background="@drawable/fondo_inputs"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             />
 
-        <TextView
+        <EditText
             android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
             android:hint="Tipo de sangre"
-            android:textStyle="italic"
-            android:padding="10dp"
             android:textColorHint="#fff"
-            />
-
-        <EditText
-            android:layout_width="370dp"
-            android:layout_height="50dp"
             android:background="@drawable/fondo_inputs"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             />
 
-        <TextView
-            android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
-            android:hint="Estatura"
-            android:textStyle="italic"
-            android:padding="10dp"
-            android:textColorHint="#fff"
-            />
-
         <EditText
             android:layout_width="370dp"
             android:layout_height="50dp"
+            android:hint="peso"
+            android:textColorHint="#fff"
             android:background="@drawable/fondo_inputs"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             />
 
-        <TextView
-            android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
-            android:hint="Peso"
-            android:textStyle="italic"
-            android:padding="10dp"
-            android:textColorHint="#fff"
-            />
-
         <EditText
             android:layout_width="370dp"
             android:layout_height="50dp"
-            android:background="@drawable/fondo_inputs"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:padding="10dp"
-            />
-
-        <TextView
-            android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
             android:hint="Alergias"
-            android:textStyle="italic"
-            android:padding="10dp"
             android:textColorHint="#fff"
-            />
-
-        <EditText
-            android:layout_width="370dp"
-            android:layout_height="50dp"
             android:background="@drawable/fondo_inputs"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             />
 
-        <TextView
+        <EditText
             android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
             android:hint="Servicio Medico"
-            android:textStyle="italic"
-            android:padding="10dp"
             android:textColorHint="#fff"
-            />
-
-        <EditText
-            android:layout_width="370dp"
-            android:layout_height="50dp"
             android:background="@drawable/fondo_inputs"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             />
 
-        <TextView
+        <EditText
             android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
             android:hint="No. de seguro social"
-            android:textStyle="italic"
-            android:padding="10dp"
             android:textColorHint="#fff"
-            />
-
-        <EditText
-            android:layout_width="370dp"
-            android:layout_height="50dp"
             android:background="@drawable/fondo_inputs"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
-            />
-
-        <TextView
-            android:layout_width="370dp"
-            android:layout_height="35.5dp"
-            android:layout_marginLeft="20dp"
-            android:hint="Notas"
-            android:textStyle="italic"
-            android:padding="10dp"
-            android:textColorHint="#fff"
             />
 
         <EditText
             android:layout_width="370dp"
             android:layout_height="200dp"
-            android:background="@drawable/fondo_inputs"
+            android:hint="Notas"
+            android:textColorHint="#fff"
+            android:background="#953b95"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"

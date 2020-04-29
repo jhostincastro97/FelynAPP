@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".CrearUsuario">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Crear Usuario"
+          android:textColor="#fff"
+          android:textSize="30dp"
+          android:textStyle="italic"
+          android:layout_marginRight="10dp"
+          android:gravity="right|center_horizontal" />
+
+
+    <Button
+        android:id="@+id/btn_A_Atras_CrearUsuario"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botones_menu"
+        android:text="Atras"
+        android:textColor="#fff"
+        android:gravity="start|center"
+        android:layout_marginTop="-37dp"
+        android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/fondocrearusuario"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/usuario_36x36"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="5dp"
+            android:hint="Nombre(s)"
+            android:inputType="text"
+            android:textColorHint="#fff"
+
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/usuario_36x36"
+            android:drawablePadding="5dp"
+            android:hint="Apellidos"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/usuario_36x36"
+            android:drawablePadding="5dp"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/usuario_36x36"
+            android:drawablePadding="5dp"
+            android:hint="Sexo"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_alternate_email_24px"
+            android:drawablePadding="5dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:drawableTint="#fff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_alternate_email_24px"
+            android:drawablePadding="5dp"
+            android:hint="Confirme Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:drawableTint="#fff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/usuario_36x36"
+            android:drawablePadding="5dp"
+            android:hint="Nombre del enfermo"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:drawableTint="#fff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/usuario_36x36"
+            android:drawablePadding="5dp"
+            android:hint="Parentesco con el enfermo"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:drawableTint="#fff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_call_black_36dp"
+            android:drawablePadding="5dp"
+            android:hint="Telefono (opcional)"
+            android:inputType="number"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:drawableTint="#fff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_vpn_key_36px"
+            android:drawablePadding="5dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:drawableTint="#fff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_vpn_key_36px"
+            android:drawablePadding="5dp"
+            android:hint="Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff"
+            android:drawableTint="#fff"
+            android:textStyle="italic" />
+
+
+
+
+        <Button
+            android:id="@+id/btn_Crear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/fondobtn"
+            android:drawableRight="@drawable/ic_chevron_right_black_36dp"
+            android:gravity="center|center_vertical"
+            android:text="Crear"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>

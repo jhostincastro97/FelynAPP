@@ -9,9 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".CrearUsuario"></activity>
+        <activity android:name=".Psicologia" />
+        <activity android:name=".Neurologia" />
+        <activity android:name=".Cardiologia" />
+        <activity android:name=".Localizar" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".Geriatria" />
+        <activity android:name=".CategoriasCitas" />
+        <activity android:name=".InformacionGeneral" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Inicio">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
