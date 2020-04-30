@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to Fely"
+            android:text="Welcome to Felyn"
             android:textSize="43dp"
             android:textColor="#fff"
             android:layout_marginLeft="55dp"

@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CrearUsuario"></activity>
+        <activity android:name=".MedicinaInterna"/>
+        <activity android:name=".Urologia" />
+        <activity android:name=".Ginecologia" />
+        <activity android:name=".Odontologia" />
+        <activity android:name=".MedicoGeneral" />
+        <activity android:name=".Reumatologia" />
+        <activity android:name=".LabClinico" />
+        <activity android:name=".TipsConsejos" />
+        <activity android:name=".BlogInteractivo" />
+        <activity android:name=".CrearUsuario" />
         <activity android:name=".Psicologia" />
         <activity android:name=".Neurologia" />
         <activity android:name=".Cardiologia" />

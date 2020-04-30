@@ -4,18 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_cardiologia.*
-import kotlinx.android.synthetic.main.activity_neurologia.*
+import kotlinx.android.synthetic.main.activity_medicina_interna.*
 
-class Neurologia : AppCompatActivity() {
+class MedicinaInterna : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_neurologia)
+        setContentView(R.layout.activity_medicina_interna)
 
-        btn_A_Neurologia_menu.setOnClickListener{
+        btn_A_MedInterna_menu.setOnClickListener{
             var intent = Intent(this,MenuActivity::class.java)
             startActivity(intent)
         }
-
     }
 }

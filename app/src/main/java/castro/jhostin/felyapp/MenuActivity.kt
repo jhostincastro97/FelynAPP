@@ -38,6 +38,16 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btn_blog.setOnClickListener{
+            var intent = Intent(this, BlogInteractivo::class.java)
+            startActivity(intent)
+        }
+
+        btn_tips.setOnClickListener{
+            var intent = Intent(this, TipsConsejos::class.java)
+            startActivity(intent)
+        }
+
 
 
     }
