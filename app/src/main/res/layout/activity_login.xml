@@ -10,13 +10,13 @@
 
 
     <Button
-        android:id="@+id/inicio_sesion"
+        android:id="@+id/btn_A_inicio"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="170dp"
         android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
-        android:text="Inicio De Sesion"
+        android:text="Atras"
         android:textColor="@color/colorWhite"
         android:background="@color/bntAtras"
         android:layout_marginRight="170dp"
