@@ -11,8 +11,9 @@ class Urologia : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_urologia)
+
         btn_A_Urologia_menu.setOnClickListener{
-            var intent = Intent(this,MenuActivity::class.java)
+            var intent = Intent(this,CategoriasCitas::class.java)
             startActivity(intent)
         }
     }

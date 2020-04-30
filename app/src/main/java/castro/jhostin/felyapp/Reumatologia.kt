@@ -13,7 +13,7 @@ class Reumatologia : AppCompatActivity() {
         setContentView(R.layout.activity_reumatologia)
 
         btn_A_Reumatologia_menu.setOnClickListener{
-            var intent = Intent(this,MenuActivity::class.java)
+            var intent = Intent(this,CategoriasCitas::class.java)
             startActivity(intent)
         }
 

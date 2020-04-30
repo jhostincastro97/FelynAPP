@@ -13,7 +13,7 @@ class MedicinaInterna : AppCompatActivity() {
         setContentView(R.layout.activity_medicina_interna)
 
         btn_A_MedInterna_menu.setOnClickListener{
-            var intent = Intent(this,MenuActivity::class.java)
+            var intent = Intent(this,CategoriasCitas::class.java)
             startActivity(intent)
         }
     }

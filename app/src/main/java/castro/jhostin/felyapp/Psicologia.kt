@@ -13,7 +13,7 @@ class Psicologia : AppCompatActivity() {
         setContentView(R.layout.activity_psicologia)
 
         btn_A_Psicologia_menu.setOnClickListener{
-            var intent = Intent(this,MenuActivity::class.java)
+            var intent = Intent(this,CategoriasCitas::class.java)
             startActivity(intent)
         }
 

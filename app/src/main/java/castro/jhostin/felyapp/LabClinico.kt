@@ -13,7 +13,7 @@ class LabClinico : AppCompatActivity() {
         setContentView(R.layout.activity_lab_clinico)
 
         btn_A_LabClinico_menu.setOnClickListener{
-            var intent = Intent(this,MenuActivity::class.java)
+            var intent = Intent(this,CategoriasCitas::class.java)
             startActivity(intent)
         }
     }

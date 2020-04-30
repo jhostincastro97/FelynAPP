@@ -12,7 +12,7 @@ class Cardiologia : AppCompatActivity() {
         setContentView(R.layout.activity_cardiologia)
 
         btn_A_Cardiologia_menu.setOnClickListener{
-            var intent = Intent(this,MenuActivity::class.java)
+            var intent = Intent(this,CategoriasCitas::class.java)
             startActivity(intent)
         }
 

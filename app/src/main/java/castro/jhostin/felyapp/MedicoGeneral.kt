@@ -13,7 +13,7 @@ class MedicoGeneral : AppCompatActivity() {
         setContentView(R.layout.activity_medico_general)
 
         btn_A_MedicoGeneral_menu.setOnClickListener{
-            var intent = Intent(this,MenuActivity::class.java)
+            var intent = Intent(this,CategoriasCitas::class.java)
             startActivity(intent)
         }
     }

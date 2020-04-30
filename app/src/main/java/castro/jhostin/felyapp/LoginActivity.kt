@@ -38,9 +38,8 @@ class  LoginActivity : AppCompatActivity() {
             startActivityForResult(signInIntent, RC_SIGN_IN)
 
         }
+
         //Funciones con intent
-
-
         btn_CrearUsuario.setOnClickListener{
             var intent = Intent(this,CrearUsuario::class.java)
             startActivity(intent)
@@ -57,24 +56,9 @@ class  LoginActivity : AppCompatActivity() {
 
         // Check for existing Google Sign In account, if the user is already signed in
 // the GoogleSignInAccount will be non-null.
-
-        // Check for existing Google Sign In account, if the user is already signed in
-// the GoogleSignInAccount will be non-null.
         val account = GoogleSignIn.getLastSignedInAccount(this)
         updateUI(account)
     }
-
-
-//    fun onClick(v: View) {
-//        when (v.getId()) {
-//            R.id.btn_sign_in_button -> signIn()
-//        }
-//    }
-//
-//    private fun signIn() {
-//        val signInIntent = mGoogleSignInClient.signInIntent
-//        startActivityForResult(signInIntent, RC_SIGN_IN)
-//    }
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -98,15 +82,9 @@ class  LoginActivity : AppCompatActivity() {
         mGoogleSignInClient.signOut()
             .addOnCompleteListener(this) {
                 Toast.makeText(this, "A cerrado sesion",Toast.LENGTH_SHORT).show()
-//                revokeAccess()
             }
     }
-//    private fun signOut() {
-//        mGoogleSignInClient.signOut()
-//            .addOnCompleteListener(this,{
-//                Toast.makeText(this, "A cerrado sesion",Toast.LENGTH_SHORT).show()
-//            }
-//    }
+
 
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {

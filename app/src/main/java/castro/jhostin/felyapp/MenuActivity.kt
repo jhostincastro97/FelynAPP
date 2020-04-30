@@ -39,10 +39,7 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btn_cerrar_sesion.setOnClickListener{
-//           Toast.makeText(this, "Sesion Cerrada",Toast.LENGTH_SHORT).show()
             finish()
-//            var intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
         }
 
         btn_blog.setOnClickListener{

@@ -13,7 +13,7 @@ class Neurologia : AppCompatActivity() {
         setContentView(R.layout.activity_neurologia)
 
         btn_A_Neurologia_menu.setOnClickListener{
-            var intent = Intent(this,MenuActivity::class.java)
+            var intent = Intent(this,CategoriasCitas::class.java)
             startActivity(intent)
         }
 

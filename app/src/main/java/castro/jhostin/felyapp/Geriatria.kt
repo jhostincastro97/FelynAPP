@@ -13,7 +13,7 @@ class Geriatria : AppCompatActivity() {
         setContentView(R.layout.activity_geriatria)
 
         btn_A_Geratria_menu.setOnClickListener{
-            var intent = Intent(this,MenuActivity::class.java)
+            var intent = Intent(this,CategoriasCitas::class.java)
             startActivity(intent)
         }
     }
