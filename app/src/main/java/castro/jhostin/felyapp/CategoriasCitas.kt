@@ -36,6 +36,41 @@ class CategoriasCitas : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btn_LabClinico.setOnClickListener{
+            var intent = Intent(this,LabClinico::class.java)
+            startActivity(intent)
+        }
+
+        btn_Reumatologia.setOnClickListener{
+            var intent = Intent(this,Reumatologia::class.java)
+            startActivity(intent)
+        }
+
+        btn_MedicoGeneral.setOnClickListener{
+            var intent = Intent(this,MedicoGeneral::class.java)
+            startActivity(intent)
+        }
+
+        btn_Odontologia.setOnClickListener{
+            var intent = Intent(this,Odontologia::class.java)
+            startActivity(intent)
+        }
+
+        btn_Ginecologia.setOnClickListener{
+            var intent = Intent(this,Ginecologia::class.java)
+            startActivity(intent)
+        }
+
+        btn_Urologia.setOnClickListener{
+            var intent = Intent(this,Urologia::class.java)
+            startActivity(intent)
+        }
+
+        btn_MedicinaInterna.setOnClickListener{
+            var intent = Intent(this,MedicinaInterna::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

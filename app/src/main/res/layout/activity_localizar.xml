@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimary"
-    tools:context=".informacion_general">
+    tools:context=".InformacionGeneral">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,16 +41,13 @@
 
 
 
-        <Button
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="20dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/usuario"
-            android:drawableRight="@drawable/ic_place_black_48dp"
-            android:drawableTint="#3b3b3b" />
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ubicacion_72x72"
+             />
 
 
 
@@ -73,7 +70,6 @@
 de que lleve mas tiempo\n de lo normal, fuera de casa."
             android:textSize="17dp"
             android:textColor="#fff"
-            android:textAlignment="textStart"
             android:layout_gravity="center"
             />
 

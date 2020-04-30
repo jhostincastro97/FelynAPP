@@ -9,6 +9,38 @@
     tools:context=".Inicio">
 
 
+<<<<<<< HEAD
+=======
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Felyn"
+            android:textSize="43dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="175dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="43dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+
+            />
+
+>>>>>>> 7e8c9be070e0cf886a69608765dec5dae57550f0
         <Button
             android:id="@+id/btn_comenzar"
             android:layout_width="220dp"
