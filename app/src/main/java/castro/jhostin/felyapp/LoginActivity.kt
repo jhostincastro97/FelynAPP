@@ -1,11 +1,13 @@
 package castro.jhostin.felyapp
 
 import android.content.Intent
-import android.net.Uri
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.facebook.CallbackManager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -18,7 +20,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 val RC_SIGN_IN = 123
 val CODE_LOGOUT = 321
 class  LoginActivity : AppCompatActivity() {
-
+    private var callbackManager:CallbackManager? = null
     lateinit var mGoogleSignInClient: GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,6 +51,10 @@ class  LoginActivity : AppCompatActivity() {
             var intent = Intent(this,Inicio::class.java)
             startActivity(intent)
         }
+        //Sesion con facebook
+        callbackManager = CallbackManager.Factory.create()
+
+
     }
 
     override fun onStart() {
