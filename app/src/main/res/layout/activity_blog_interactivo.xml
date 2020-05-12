@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/colorPrimary"
     tools:context=".BlogInteractivo">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="Temas"
                 android:textSize="16dp"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimaryDark"
                 android:textAllCaps="false"
                 android:background="@drawable/fondobtn"/>
 
@@ -97,85 +97,31 @@
             android:background="@drawable/fondobtn"
             />
 
-        <Button
-            android:layout_width="match_parent"
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="30dp"
-            android:text="Carmen Méndez"
-            android:textColor="@color/colorWhite"
-            android:textAllCaps="false"
-            android:textAlignment="gravity"
-            android:drawableLeft="@drawable/usuario_36x36"
-            android:background="@drawable/fondo_inputs"
-            android:gravity="center_vertical" />
-
-        <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="15dp"
-        android:text="Armando Pérez"
-        android:textColor="@color/colorWhite"
-        android:textAllCaps="false"
-        android:textAlignment="gravity"
-        android:drawableLeft="@drawable/usuario_36x36"
-        android:background="@drawable/fondo_inputs"
-        android:gravity="center_vertical" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="15dp"
-            android:text="Joaquin López"
-            android:textColor="@color/colorWhite"
-            android:textAllCaps="false"
-            android:textAlignment="gravity"
-            android:drawableLeft="@drawable/usuario_36x36"
-            android:background="@drawable/fondo_inputs"
-            android:gravity="center_vertical" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="15dp"
-            android:text="Román Lizarraga"
-            android:textColor="@color/colorWhite"
-            android:textAllCaps="false"
-            android:textAlignment="gravity"
-            android:drawableLeft="@drawable/usuario_36x36"
-            android:background="@drawable/fondo_inputs"
-            android:gravity="center_vertical" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="15dp"
-            android:text="Denisse Cáñez"
-            android:textColor="@color/colorWhite"
-            android:textAllCaps="false"
-            android:textAlignment="gravity"
-            android:drawableLeft="@drawable/usuario_36x36"
-            android:background="@drawable/fondo_inputs"
-            android:gravity="center_vertical" />
+            android:layout_gravity="top|end"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="350dp"
+            android:src="@drawable/ic_add_black_24dp"
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:text="FELY APP, Derechos Reservados 2020"
             android:textColor="#fff"
-            android:layout_marginTop="100dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal" />
-
     </LinearLayout>
 
+    <ListView
+        android:id="@+id/listview"
+        android:background="#b498b4"
+        android:layout_marginTop="290dp"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+    </ListView>
 
 </RelativeLayout>
+
