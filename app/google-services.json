@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "82460969228",
+    "firebase_url": "https://felynapp.firebaseio.com",
+    "project_id": "felynapp",
+    "storage_bucket": "felynapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82460969228:android:cc68bd9549abf294e2a129",
+        "android_client_info": {
+          "package_name": "castro.jhostin.felyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82460969228-60gdfp3845jrnhqtmq7n9bcgu8pt9n67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "castro.jhostin.felyapp",
+            "certificate_hash": "5e5cd432b87c778332761acd0864870e8c6db058"
+          }
+        },
+        {
+          "client_id": "82460969228-s2koq7skd9qvrv433iqcmvucoh8n7bb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzN6Zy6NNJ01jS5Spbv4pUewA7VdwK8w8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82460969228-s2koq7skd9qvrv433iqcmvucoh8n7bb2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

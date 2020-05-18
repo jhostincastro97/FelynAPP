@@ -42,6 +42,10 @@ class  LoginActivity : AppCompatActivity() {
         }
 
         //Funciones con intent
+        btn_Ingresar.setOnClickListener{
+            var intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
         btn_CrearUsuario.setOnClickListener{
             var intent = Intent(this,CrearUsuario::class.java)
             startActivity(intent)
