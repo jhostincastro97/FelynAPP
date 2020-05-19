@@ -75,16 +75,17 @@
                 android:drawableTint="#FFF" />
 
             <Button
-                android:id="@+id/bntIngresarIG"
+                android:id="@+id/btn_GuardarIG"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/botones_menu"
                 android:padding="5dp"
-                android:layout_marginTop="10dp"
                 android:text="Ingresar"
-
-                android:textColor="#fff" />
+                android:onClick="add"
+                android:textColor="#fff"
+                tools:ignore="OnClick" />
 
             <Button
                 android:id="@+id/btnEditarIG"
@@ -96,9 +97,11 @@
                 android:textColor="#fff"
                 android:layout_marginLeft="255dp"
                 android:layout_marginTop="-50dp"
+                android:onClick="update"
                 />
 
             <TextView
+                android:id="@+id/tv_nombre_ig"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Juan Rodriguez"
@@ -110,6 +113,7 @@
 
 
             <EditText
+                android:id="@+id/et_nombre"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:background="@drawable/fondo_inputs"
@@ -121,6 +125,7 @@
                 />
 
             <EditText
+                android:id="@+id/et_edad"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:background="@drawable/fondo_inputs"
@@ -133,6 +138,7 @@
 
 
             <EditText
+                android:id="@+id/et_enfermedad"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:background="@drawable/fondo_inputs"
@@ -144,6 +150,7 @@
                 />
 
             <EditText
+                android:id="@+id/et_grado_enfermedad"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:hint="Grado o porcentaje de enfermedad"
@@ -155,6 +162,7 @@
                 />
 
             <EditText
+                android:id="@+id/et_tipo_de_sangre"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:hint="Tipo de sangre"
@@ -164,8 +172,20 @@
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
                 />
+            <EditText
+                android:id="@+id/et_estatura"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:hint="Estatura"
+                android:textColorHint="#fff"
+                android:background="@drawable/fondo_inputs"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                />
 
             <EditText
+                android:id="@+id/et_peso"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:hint="Peso"
@@ -177,6 +197,7 @@
                 />
 
             <EditText
+                android:id="@+id/et_alergias"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:hint="Alergias"
@@ -188,6 +209,7 @@
                 />
 
             <EditText
+                android:id="@+id/et_servicio_medico"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:hint="Servicio Medico"
@@ -199,6 +221,7 @@
                 />
 
             <EditText
+                android:id="@+id/et_no_seguro_social"
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:hint="No. de seguro social"
@@ -210,6 +233,7 @@
                 />
 
             <TextView
+                android:id="@+id/et_descripcion_medica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Notas:"
