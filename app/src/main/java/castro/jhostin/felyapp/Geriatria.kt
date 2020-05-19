@@ -4,10 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.DatePicker
-import android.widget.EditText
-import android.widget.ListView
+import android.widget.*
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_geriatria.*
 import java.util.*
@@ -68,6 +65,8 @@ class Geriatria : AppCompatActivity(), View.OnClickListener {
         builder.append(datePicker.year)
         val fechaCita = builder.toString()
         val cita = Cita(UUID.randomUUID().toString(),nombre, cedula, direccion, telefono, clinica, numConsultorio, fechaCita)
-        database.child("citas").child(cita.id.toString()).setValue(cita)
+        database.child("citas").child(cita.id.toString()).setValue(cita).addOnCompleteListener{
+            Toast.makeText(applicationContext, "Cita guardada con exito!",Toast.LENGTH_SHORT).show()
+        }
     }
 }
