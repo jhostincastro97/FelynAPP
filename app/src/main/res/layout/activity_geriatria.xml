@@ -168,6 +168,30 @@
                 android:text="Agregar cita a calendario"
                 android:textColor="#fff" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver lista de Citas en Geriatria"
+                android:textSize="23sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_VerCitas"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondobtn"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Ver Citas"
+                android:textColor="@color/colorPrimary" />
+
+
+
         </LinearLayout>
     </ScrollView>
 

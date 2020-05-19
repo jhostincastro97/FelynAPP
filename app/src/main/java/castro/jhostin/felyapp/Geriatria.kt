@@ -7,10 +7,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.DatePicker
 import android.widget.EditText
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import android.widget.ListView
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_geriatria.*
-import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 class Geriatria : AppCompatActivity(), View.OnClickListener {
@@ -38,8 +37,14 @@ class Geriatria : AppCompatActivity(), View.OnClickListener {
         btnGuardarCita = findViewById(R.id.btn_AgregarCita)
         btnGuardarCita.setOnClickListener(this)
         database = FirebaseDatabase.getInstance().reference
+
         btn_A_Geratria_menu.setOnClickListener{
             var intent = Intent(this,CategoriasCitas::class.java)
+            startActivity(intent)
+        }
+
+        btn_VerCitas.setOnClickListener {
+            var intent = Intent(this, ListViewCitas::class.java)
             startActivity(intent)
         }
     }
@@ -62,7 +67,7 @@ class Geriatria : AppCompatActivity(), View.OnClickListener {
         builder.append((datePicker.month + 1).toString() + "/")
         builder.append(datePicker.year)
         val fechaCita = builder.toString()
-        val cita = Cita(UUID.randomUUID(),nombre, cedula, direccion, telefono, clinica, numConsultorio, fechaCita)
+        val cita = Cita(UUID.randomUUID().toString(),nombre, cedula, direccion, telefono, clinica, numConsultorio, fechaCita)
         database.child("citas").child(cita.id.toString()).setValue(cita)
     }
 }
