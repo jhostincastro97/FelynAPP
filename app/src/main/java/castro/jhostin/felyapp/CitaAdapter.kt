@@ -1,5 +1,6 @@
 package castro.jhostin.felyapp
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.text.Layout
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import org.w3c.dom.Text
 
 class CitaAdapter(val mCtx: Context, val layoutresid: Int, val listaCitas: List<Cita>) : ArrayAdapter<Cita>(mCtx, layoutresid, listaCitas) {
 
+    @SuppressLint("SetTextI18n")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val layoutInflater: LayoutInflater = LayoutInflater.from(mCtx)
         val view: View = layoutInflater.inflate(layoutresid, null)
@@ -23,13 +25,13 @@ class CitaAdapter(val mCtx: Context, val layoutresid: Int, val listaCitas: List<
         val numConsultorio = view.findViewById<TextView>(R.id.txtNumConsultorio)
         val fechaCita = view.findViewById<TextView>(R.id.txtFechaCita)
         val cita = listaCitas[position]
-        nombre.text = cita.nombreEnfermo
-        cedula.text = cita.cedula
-        direccion.text = cita.direccion
-        telefono.text = cita.telefono
-        clinica.text = cita.clinica
-        numConsultorio.text = cita.numConsultorio
-        fechaCita.text = cita.fechaCita
+        nombre.text = "Nombre: "+cita.nombreEnfermo
+        cedula.text = "# Cedula: "+cita.cedula
+        direccion.text = "Direccion: " + cita.direccion
+        telefono.text = "Telefono: "+cita.telefono
+        clinica.text = "Clinica: "+cita.clinica
+        numConsultorio.text = "# Consultorio: " +cita.numConsultorio
+        fechaCita.text = " " + "Fecha: " +cita.fechaCita
         return view
 
     }

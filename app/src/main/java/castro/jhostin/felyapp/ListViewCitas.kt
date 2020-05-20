@@ -5,6 +5,7 @@ package castro.jhostin.felyapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.ListView
 import com.google.firebase.database.*
@@ -22,15 +23,15 @@ class ListViewCitas : AppCompatActivity() {
         listView = findViewById(R.id.listview_citas)
         ref = FirebaseDatabase.getInstance().getReference("citas")
 
-        ref.addValueEventListener(object: ValueEventListener{
+        ref.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
                 TODO("Not yet implemented")
             }
 
             override fun onDataChange(p0: DataSnapshot) {
-                if(p0!!.exists()){
+                if (p0!!.exists()) {
                     listaCitas.clear()
-                    for(c in p0.children){
+                    for (c in p0.children) {
                         val cita = c.getValue(Cita::class.java)
                         listaCitas.add(cita!!)
                     }
@@ -40,6 +41,13 @@ class ListViewCitas : AppCompatActivity() {
             }
 
         })
+
+
+        btn_nueva.setOnClickListener{
+            val intent = Intent(this, Geriatria::class.java)
+            startActivity(intent)
+        }
+
         btnMenu.setOnClickListener {
             var intent = Intent(this, CategoriasCitas::class.java)
             startActivity(intent)
