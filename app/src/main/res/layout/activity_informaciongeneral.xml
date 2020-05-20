@@ -119,7 +119,7 @@
                 android:background="@drawable/fondo_inputs"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:hint="Nombre Completo"
+                android:hint="Nombre Completo:"
                 android:textColorHint="#fff"
                 android:padding="10dp"
                 />

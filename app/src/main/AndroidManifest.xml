@@ -18,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
+
         <activity android:name=".imprime_datosIG"></activity>
         <activity android:name=".Suena_alarma" />
         <!--
@@ -38,10 +38,6 @@
             android:label="@string/title_activity_ubicar_paciente" />
         <activity android:name=".Comentario_blog" />
         <activity android:name=".ListViewCitas" />
-=======
-        <activity android:name=".ListViewCitas"/>
-        <activity android:name=".Comentario_blog" />
->>>>>>> ab50d8f5038f8bdec6fdb90cad2376805d566457
         <activity android:name=".MedicinaInterna" />
         <activity android:name=".Urologia" />
         <activity android:name=".Ginecologia" />

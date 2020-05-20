@@ -1,9 +1,7 @@
 package castro.jhostin.felyapp
 
-<<<<<<< HEAD
-import android.annotation.SuppressLint
-=======
->>>>>>> ab50d8f5038f8bdec6fdb90cad2376805d566457
+
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,10 +10,7 @@ import android.widget.ListView
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_list_view_citas.*
 
-<<<<<<< HEAD
-@SuppressLint("Registered")
-=======
->>>>>>> ab50d8f5038f8bdec6fdb90cad2376805d566457
+
 class ListViewCitas : AppCompatActivity() {
     lateinit var ref: DatabaseReference
     lateinit var listaCitas: MutableList<Cita>
