@@ -3,13 +3,12 @@ package castro.jhostin.felyapp
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity : AppCompatActivity() {
-        private lateinit var cerrar: LoginActivity
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
@@ -19,12 +18,12 @@ class MenuActivity : AppCompatActivity() {
             val nombre = bundle.getString("name")
             val correo = bundle.getString("email")
 
-            tv_nombre.setText("¡Bienvenido(a)!\n"+nombre)
+            tv_nombre.setText("!Bienvenido(a)¡\n"+nombre)
             tv_correo.setText(correo)
         }
 
         btn_InfoGeneral.setOnClickListener{
-            var intent = Intent(this,imprime_datosIG::class.java)
+            var intent = Intent(this,InformacionGeneral::class.java)
             startActivity(intent)
         }
 
@@ -40,9 +39,8 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btn_cerrar_sesion.setOnClickListener{
-            cerrar.signOut()
-
-      }
+            finish()
+        }
 
         btn_blog.setOnClickListener{
             var intent = Intent(this, BlogInteractivo::class.java)

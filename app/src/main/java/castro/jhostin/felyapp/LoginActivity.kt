@@ -20,6 +20,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 val RC_SIGN_IN = 123
 val CODE_LOGOUT = 321
 class  LoginActivity : AppCompatActivity() {
+    private var callbackManager:CallbackManager? = null
     lateinit var mGoogleSignInClient: GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,6 +51,9 @@ class  LoginActivity : AppCompatActivity() {
             var intent = Intent(this,Inicio::class.java)
             startActivity(intent)
         }
+        //Sesion con facebook
+        callbackManager = CallbackManager.Factory.create()
+
 
     }
 
@@ -80,12 +84,10 @@ class  LoginActivity : AppCompatActivity() {
     }
 
 
-    fun signOut() {
+    private fun signOut() {
         mGoogleSignInClient.signOut()
             .addOnCompleteListener(this) {
                 Toast.makeText(this, "A cerrado sesion",Toast.LENGTH_SHORT).show()
-                var intent = Intent(this,Inicio::class.java)
-                startActivity(intent)
             }
     }
 

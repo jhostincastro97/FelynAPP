@@ -30,7 +30,7 @@
         android:id="@+id/et_contenido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribir aqui...."
+        android:hint="Escribir nota aqui...."
         android:inputType="textMultiLine"
         android:textColorHint="#fff"
         android:layout_weight="1"
