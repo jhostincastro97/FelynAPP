@@ -36,6 +36,7 @@
             android:name=".Ubicar_paciente"
             android:label="@string/title_activity_ubicar_paciente" />
         <activity android:name=".Comentario_blog" />
+        <activity android:name=".ListViewCitas" />
         <activity android:name=".MedicinaInterna" />
         <activity android:name=".Urologia" />
         <activity android:name=".Ginecologia" />
