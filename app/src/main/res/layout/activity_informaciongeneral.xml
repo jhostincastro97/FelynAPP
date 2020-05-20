@@ -101,7 +101,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Juan Diego Lopez"
+                android:text="Juan Rodriguez"
                 android:textSize="20dp"
                 android:layout_marginTop="17dp"
                 android:layout_marginLeft="140dp"
@@ -115,8 +115,7 @@
                 android:background="@drawable/fondo_inputs"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:textSize="14sp"
-                android:hint="Nombre completo: Juan Diego Lopez Esparza"
+                android:hint="Nombre Completo"
                 android:textColorHint="#fff"
                 android:padding="10dp"
                 />
@@ -125,7 +124,7 @@
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:background="@drawable/fondo_inputs"
-                android:hint="Edad: 60 años"
+                android:hint="Edad"
                 android:textColorHint="#fff"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
@@ -137,7 +136,7 @@
                 android:layout_width="370dp"
                 android:layout_height="50dp"
                 android:background="@drawable/fondo_inputs"
-                android:hint="Enermedad: Alzheimer"
+                android:hint="Enfermedad"
                 android:textColorHint="#fff"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
@@ -147,18 +146,7 @@
             <EditText
                 android:layout_width="370dp"
                 android:layout_height="50dp"
-                android:hint="Grado/Porcentaje: Avanzado - 80%"
-                android:textColorHint="#fff"
-                android:background="@drawable/fondo_inputs"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                />
-
-            <EditText
-                android:layout_width="370dp"
-                android:layout_height="50dp"
-                android:hint="Tipo de sangre: AB+"
+                android:hint="Grado o porcentaje de enfermedad"
                 android:textColorHint="#fff"
                 android:background="@drawable/fondo_inputs"
                 android:layout_gravity="center"
@@ -169,7 +157,7 @@
             <EditText
                 android:layout_width="370dp"
                 android:layout_height="50dp"
-                android:hint="Peso: 85kg"
+                android:hint="Tipo de sangre"
                 android:textColorHint="#fff"
                 android:background="@drawable/fondo_inputs"
                 android:layout_gravity="center"
@@ -180,7 +168,7 @@
             <EditText
                 android:layout_width="370dp"
                 android:layout_height="50dp"
-                android:hint="Alergias: N/A"
+                android:hint="Peso"
                 android:textColorHint="#fff"
                 android:background="@drawable/fondo_inputs"
                 android:layout_gravity="center"
@@ -191,7 +179,7 @@
             <EditText
                 android:layout_width="370dp"
                 android:layout_height="50dp"
-                android:hint="Servicio Medico: seguro social"
+                android:hint="Alergias"
                 android:textColorHint="#fff"
                 android:background="@drawable/fondo_inputs"
                 android:layout_gravity="center"
@@ -202,7 +190,18 @@
             <EditText
                 android:layout_width="370dp"
                 android:layout_height="50dp"
-                android:hint="No. de seguro social: 812381238"
+                android:hint="Servicio Medico"
+                android:textColorHint="#fff"
+                android:background="@drawable/fondo_inputs"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                />
+
+            <EditText
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:hint="No. de seguro social"
                 android:textColorHint="#fff"
                 android:background="@drawable/fondo_inputs"
                 android:layout_gravity="center"
@@ -222,7 +221,6 @@
                 android:layout_width="370dp"
                 android:layout_height="200dp"
                 android:textColorHint="#fff"
-                android:hint="Necesita de geolocalizacion gradual, cambio de ropa diario, ayuda con medicinas."
                 android:background="@drawable/fondo_inputs"
                 android:layout_gravity="center"
 
